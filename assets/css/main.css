@@ -1,0 +1,51 @@
+/*start gloal*/
+body{
+  font-family: "Poppins", sans-serif;
+}
+/*end gloal*/
+
+/*start header-nav*/
+.header-nav{
+    font-size: 18px;
+    background-color: #000000;
+}
+.header-nav .flag-logo{
+    list-style-type: none;
+    align-items: center;
+    color: white;
+}
+.header-nav .flag-logo li .navbar-brand img{
+    width: 85%;
+}
+.header-nav .flag-logo .dropdown a.dropdown-toggle{
+    text-decoration: none;
+    color: #fff;
+}
+.header-nav .flag-logo .dropdown .dropdown-menu{
+    min-width: 6rem;
+}
+.header-nav .flag-logo .dropdown .dropdown-menu li{
+    padding-left: 22px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.header-nav .flag-logo .dropdown .dropdown-menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+.header-nav .flag-logo .dropdown .dropdown-menu li:hover{
+    background-color: #00b1ff;
+}
+.header-nav .collapse .navbar-nav{
+    width: 500px;
+    
+}
+.header-nav .collapse .navbar-nav .nav-item{
+    flex-grow: 1;
+}
+.header-nav .collapse .navbar-nav .nav-item .nav-link{
+    color: white;
+}
+/*end header-nav*/
