@@ -5,6 +5,20 @@
 body{
   font-family: "Poppins", sans-serif;
 }
+.custom_btn{
+    background: #2577fd;
+    text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 0;
+    border-radius: 25px;
+    border: 0;
+    margin: 0;
+    text-align: center;
+}
 /*end gloal*/
 
 /*start header-nav*/
@@ -129,7 +143,7 @@ body{
 .navbar form .btn{
     padding: 8px 30px;
     font-size: 25px;
-    
+
 }
 
 .navbar form .search-icon{
@@ -231,3 +245,58 @@ body{
 }
 }
 /*end sticky-nav*/
+
+/*start hero-sectio*/
+.hero{
+    background-image: url(./../imgs/hero/h1_hero.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.hero .hero-img{
+    height: 100%;
+}
+.hero .hero-img img{
+    width: 100%;
+    height: 100%;
+}
+.hero .hero_caption span{
+    color: #2577fd;
+    font-family: "Yellowtail", cursive;
+    font-size: 40px;
+    display: inline-block;
+}
+.hero .hero_caption h1{
+    color: #1f2022;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 13px;
+    font-family: "Playfair Display", serif;
+}
+.hero .hero_caption p{
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 300;
+        color: #313639;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+.hero .hero_caption .shop-btn{
+    text-decoration: none;
+        padding: 25px 29px;
+}
+@media screen and (max-width: 767px){
+    .hero .hero_caption{
+        /* padding: 15px; */
+        padding-top: 38px;
+        padding-left: 40px;
+    }
+    .hero .hero_caption h1{
+        font-size: 35px;
+        line-height: 1.2;
+        margin-bottom: 26px;
+    }
+}
+/*end hero-sectio*/

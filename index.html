@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estore-v1</title>
-    <!-- font -->
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
       rel="stylesheet"
     />
     <!-- bootstrap css-->
@@ -75,7 +87,9 @@
     <!-- end header-nav -->
 
     <!-- start sticky-nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+    <nav
+      class="navbar position-sticky top-0 z-1 navbar-expand-lg bg-body-tertiary py-4"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./assets/imgs/navbar/logo.png.webp" alt="e-store" />
@@ -92,7 +106,10 @@
           MENU
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="wrapper collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="wrapper collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav mx-auto gap-3 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -134,8 +151,12 @@
                 <li><a class="dropdown-item" href="#">Element</a></li>
                 <li><a class="dropdown-item larg" href="#">About</a></li>
                 <li><a class="dropdown-item larg" href="#">Confirmation</a></li>
-                <li><a class="dropdown-item larg" href="#">Shopping Cart</a></li>
-                <li><a class="dropdown-item larg" href="#">Product Checkout</a></li>
+                <li>
+                  <a class="dropdown-item larg" href="#">Shopping Cart</a>
+                </li>
+                <li>
+                  <a class="dropdown-item larg" href="#">Product Checkout</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item contact">
@@ -144,24 +165,65 @@
           </ul>
           <form class="d-flex justify-content-around" role="search">
             <input
-              class=" align-self-center rounded-pill"
+              class="align-self-center rounded-pill"
               type="search"
               placeholder="Search Products"
               aria-label="Search"
             />
-            <img class="search-icon" src="./assets/imgs/navbar/search-svgrepo-com (1).svg" alt="search-icon"/>
+            <img
+              class="search-icon"
+              src="./assets/imgs/navbar/search-svgrepo-com (1).svg"
+              alt="search-icon"
+            />
             <div class="heart-icon d-flex align-self-center">
-              <img src="./assets/imgs/navbar/heart-svgrepo-com.svg" alt="heart-icon" />
+              <img
+                src="./assets/imgs/navbar/heart-svgrepo-com.svg"
+                alt="heart-icon"
+              />
             </div>
             <div class="cart-icon d-flex align-self-center">
-              <img src="./assets/imgs/navbar/cart-shopping-svgrepo-com.svg" alt="cart-icon" />
+              <img
+                src="./assets/imgs/navbar/cart-shopping-svgrepo-com.svg"
+                alt="cart-icon"
+              />
             </div>
-            <button type="button" class="btn btn-primary align-self-center rounded-pill">Sign In</button>
+            <button
+              type="button"
+              class="btn btn-primary align-self-center rounded-pill"
+            >
+              Sign In
+            </button>
           </form>
         </div>
       </div>
     </nav>
     <!-- end sticky-nav -->
+    <main>
+      <!-- start hero-section -->
+      <div class="hero vh-100">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-xl-6 col-lg-6 colmd-6 col-sm-6 d-none d-md-block">
+            <div class="hero-img">
+              <img src="./assets/imgs/hero/hero_man.png" alt="hero-man" />
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
+            <div class="hero_caption">
+              <span>60% Discount</span>
+              <h1>
+                Winter <br />
+                collection
+              </h1>
+              <p>Best Cloth Collection By 2020!</p>
+              <div class="hero-btn">
+                <a href="#" class="custom_btn shop-btn">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end hero-section -->
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
